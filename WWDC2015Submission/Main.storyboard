@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oUf-S9-dAq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="lucida.ttf">
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+            <string>LucidaGrande</string>
+        </mutableArray>
+        <mutableArray key="novecentowidebold.otf">
+            <string>Novecentowide-DemiBold</string>
+            <string>Novecentowide-DemiBold</string>
+            <string>Novecentowide-DemiBold</string>
+            <string>Novecentowide-DemiBold</string>
+            <string>Novecentowide-DemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="StartViewController" customModule="WWDC2015Submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc_header" translatesAutoresizingMaskIntoConstraints="NO" id="1MP-SL-jnp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="UsZ-YH-V3t"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilephoto" translatesAutoresizingMaskIntoConstraints="NO" id="PO6-0W-Hma">
+                                <rect key="frame" x="250" y="130" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7f9-gz-jeb"/>
+                                    <constraint firstAttribute="width" constant="100" id="Rlp-HD-ee0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-sd-3rp" customClass="StartButton" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="250" y="471" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.71070301663275004" green="0.82187202766606338" blue="0.8694168244949495" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="d9L-sN-cik"/>
+                                    <constraint firstAttribute="height" constant="100" id="ifz-9t-79T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Elk-nN-f39"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC2015 Submission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acQ-i4-ADT">
+                                <rect key="frame" x="16" y="245" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2nN-WD-HKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Novecentowide-DemiBold" family="Novecento wide" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button below to start." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE6-Ya-v54">
+                                <rect key="frame" x="16" y="277" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="msH-HA-9IP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lN-8E-z4G" customClass="DottedLineView" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="275" y="308" width="50" height="153"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RQb-NC-UWJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8lN-8E-z4G" firstAttribute="top" secondItem="vE6-Ya-v54" secondAttribute="bottom" constant="10" id="2jU-dX-Tst"/>
+                            <constraint firstItem="PO6-0W-Hma" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="110" id="CV2-Ak-Azs"/>
+                            <constraint firstItem="vE6-Ya-v54" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Fp0-N7-qs4"/>
+                            <constraint firstItem="acQ-i4-ADT" firstAttribute="top" secondItem="PO6-0W-Hma" secondAttribute="bottom" constant="15" id="I7q-GV-3QE"/>
+                            <constraint firstAttribute="trailing" secondItem="vE6-Ya-v54" secondAttribute="trailing" constant="16" id="Kxa-ba-NFk"/>
+                            <constraint firstItem="1MP-SL-jnp" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="QkI-pl-u6p"/>
+                            <constraint firstItem="o6P-sd-3rp" firstAttribute="top" secondItem="8lN-8E-z4G" secondAttribute="bottom" constant="10" id="U77-LG-64q"/>
+                            <constraint firstAttribute="trailing" secondItem="1MP-SL-jnp" secondAttribute="trailing" id="agb-o5-mXK"/>
+                            <constraint firstItem="1MP-SL-jnp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ddL-Tl-Ybu"/>
+                            <constraint firstAttribute="centerX" secondItem="PO6-0W-Hma" secondAttribute="centerX" id="dpk-nn-ZAD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="o6P-sd-3rp" secondAttribute="bottom" constant="29" id="fic-vo-aJJ"/>
+                            <constraint firstItem="vE6-Ya-v54" firstAttribute="top" secondItem="acQ-i4-ADT" secondAttribute="bottom" constant="11" id="g2d-6g-83w"/>
+                            <constraint firstAttribute="trailing" secondItem="acQ-i4-ADT" secondAttribute="trailing" constant="16" id="gi7-lE-E7R"/>
+                            <constraint firstAttribute="centerX" secondItem="8lN-8E-z4G" secondAttribute="centerX" id="ht1-XF-3Jr"/>
+                            <constraint firstItem="acQ-i4-ADT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="tLP-Ic-UAc"/>
+                            <constraint firstAttribute="centerX" secondItem="o6P-sd-3rp" secondAttribute="centerX" id="zO2-a5-Za1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MSS-dB-H9p"/>
+                    <connections>
+                        <outlet property="differenceConstraint" destination="U77-LG-64q" id="UB4-ac-ZBS"/>
+                        <outlet property="profileImageView" destination="PO6-0W-Hma" id="Bmd-H0-txy"/>
+                        <outlet property="startButton" destination="o6P-sd-3rp" id="DG6-ur-BZP"/>
+                        <segue destination="zaT-hG-q9k" kind="show" identifier="AboutSegue" id="RIG-Ce-zOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="NpU-zr-n8h">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" extendedLayoutIncludesOpaqueBars="YES" id="zaT-hG-q9k" customClass="AboutViewController" customModule="WWDC2015Submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9J-dy-sOC"/>
+                        <viewControllerLayoutGuide type="bottom" id="VPa-vL-nt7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Fb-ix-YzL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc_header" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-td-9cE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="lJh-v5-JmH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCA-8B-tyl">
+                                <rect key="frame" x="16" y="177" width="460" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="jkQ-ga-NAf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Novecentowide-DemiBold" family="Novecento wide" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n2Y-7K-SC1">
+                                <rect key="frame" x="0.0" y="475" width="600" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Uri-4x-aFH"/>
+                                </constraints>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkg-C8-HcS">
+                                <rect key="frame" x="10" y="226" width="580" height="154"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Hi everyone! I'm Martijn de Vos, 22 years old and I'm attending a Master's degree program Computer Science at the Delft University of Technology. My bachelor was also in Computer Science. I live in the Netherlands. I'm in particular interested in iOS development and I've been developing iOS apps for about five years now. About a year ago, I started my own company named CodeUp. This app shows some of my work experience, interests and skills. You can navigate through the app with the menu button in the upper left corner.</string>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowicon" translatesAutoresizingMaskIntoConstraints="NO" id="W94-q2-B6F">
+                                <rect key="frame" x="26" y="437" width="99" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="Jrx-7l-SRs"/>
+                                    <constraint firstAttribute="height" constant="69" id="Rz5-1Q-MLm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out where I live" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-Kp-tqK">
+                                <rect key="frame" x="115" y="445" width="469" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Y5n-Lh-Qso"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKQ-U3-bQi">
+                                <rect key="frame" x="534" y="397" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.2627450980392157" green="0.63529411764705879" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ogf-qr-sIQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="USg-9r-ff9"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="apppageicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appsButtonPressed:" destination="zaT-hG-q9k" eventType="touchUpInside" id="65J-YM-iNa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowforwardicon" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-ja-xHA">
+                                <rect key="frame" x="456" y="368" width="73" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="2bM-fQ-an8"/>
+                                    <constraint firstAttribute="width" constant="73" id="ws1-yk-xOO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See some apps I've created" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK4-k3-my0">
+                                <rect key="frame" x="316" y="408" width="188" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HZ8-iD-li2"/>
+                                    <constraint firstAttribute="width" constant="188" id="zdu-4C-Ufd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJT-a2-sOj" customClass="RotatingButton" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="484" y="123" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QNI-du-O9M"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZxU-Ll-asJ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="profilephoto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eKQ-U3-bQi" firstAttribute="leading" secondItem="WK4-k3-my0" secondAttribute="trailing" constant="30" id="9Dd-XN-5qo"/>
+                            <constraint firstItem="kkg-C8-HcS" firstAttribute="top" secondItem="uCA-8B-tyl" secondAttribute="bottom" constant="23" id="ALv-kg-JYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="8vd-td-9cE" secondAttribute="trailing" id="Bzm-ri-ilB"/>
+                            <constraint firstAttribute="trailing" secondItem="kkg-C8-HcS" secondAttribute="trailing" constant="10" id="Dr6-o6-4ft"/>
+                            <constraint firstItem="uCA-8B-tyl" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" constant="16" id="EU0-IY-xWK"/>
+                            <constraint firstItem="VPa-vL-nt7" firstAttribute="top" secondItem="W94-q2-B6F" secondAttribute="bottom" constant="94" id="FFM-mw-LSb"/>
+                            <constraint firstItem="uCA-8B-tyl" firstAttribute="top" secondItem="8vd-td-9cE" secondAttribute="bottom" constant="-3" id="Ilf-qo-rbB"/>
+                            <constraint firstItem="vJT-a2-sOj" firstAttribute="top" secondItem="K9J-dy-sOC" secondAttribute="bottom" constant="103" id="Pb9-f7-OPA"/>
+                            <constraint firstItem="vjW-Kp-tqK" firstAttribute="top" secondItem="IHL-ja-xHA" secondAttribute="bottom" constant="25" id="Rr5-4u-bJO"/>
+                            <constraint firstItem="n2Y-7K-SC1" firstAttribute="top" secondItem="eKQ-U3-bQi" secondAttribute="bottom" constant="28" id="VGd-KO-sgL"/>
+                            <constraint firstItem="eKQ-U3-bQi" firstAttribute="leading" secondItem="IHL-ja-xHA" secondAttribute="trailing" constant="5" id="Xdn-vk-u07"/>
+                            <constraint firstItem="n2Y-7K-SC1" firstAttribute="top" secondItem="kkg-C8-HcS" secondAttribute="bottom" constant="95" id="Y2I-YP-35g"/>
+                            <constraint firstItem="n2Y-7K-SC1" firstAttribute="top" secondItem="vjW-Kp-tqK" secondAttribute="bottom" constant="9" id="bMv-le-mbg"/>
+                            <constraint firstItem="8vd-td-9cE" firstAttribute="top" secondItem="K9J-dy-sOC" secondAttribute="bottom" constant="-20" id="bgu-wL-1Ow"/>
+                            <constraint firstItem="kkg-C8-HcS" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" constant="10" id="cf9-BL-V6M"/>
+                            <constraint firstAttribute="trailing" secondItem="vjW-Kp-tqK" secondAttribute="trailing" constant="16" id="dxE-tP-Mku"/>
+                            <constraint firstAttribute="trailing" secondItem="n2Y-7K-SC1" secondAttribute="trailing" id="ff4-rf-x5K"/>
+                            <constraint firstItem="VPa-vL-nt7" firstAttribute="top" secondItem="n2Y-7K-SC1" secondAttribute="bottom" id="kJP-Wn-e2y"/>
+                            <constraint firstItem="vjW-Kp-tqK" firstAttribute="top" secondItem="WK4-k3-my0" secondAttribute="bottom" constant="16" id="mOA-Pe-Um9"/>
+                            <constraint firstItem="8vd-td-9cE" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" id="nWU-fR-eiQ"/>
+                            <constraint firstItem="vjW-Kp-tqK" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" constant="115" id="qPu-YK-D5k"/>
+                            <constraint firstItem="vJT-a2-sOj" firstAttribute="leading" secondItem="uCA-8B-tyl" secondAttribute="trailing" constant="8" id="t0n-7Z-k6y"/>
+                            <constraint firstAttribute="trailing" secondItem="vJT-a2-sOj" secondAttribute="trailing" constant="16" id="u0X-Ml-xsQ"/>
+                            <constraint firstItem="W94-q2-B6F" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" constant="26" id="wDi-nm-O9J"/>
+                            <constraint firstAttribute="trailing" secondItem="eKQ-U3-bQi" secondAttribute="trailing" constant="16" id="zfQ-nB-8V4"/>
+                            <constraint firstItem="n2Y-7K-SC1" firstAttribute="leading" secondItem="4Fb-ix-YzL" secondAttribute="leading" id="zhj-8G-xaa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutTextView" destination="kkg-C8-HcS" id="ROB-vj-ldW"/>
+                        <outlet property="appsButton" destination="eKQ-U3-bQi" id="icw-ZK-H5x"/>
+                        <outlet property="locationMapView" destination="n2Y-7K-SC1" id="jba-eX-SLN"/>
+                        <outlet property="photoRotatingButton" destination="vJT-a2-sOj" id="o7p-zs-ihU"/>
+                        <segue destination="tS2-KL-RPf" kind="show" identifier="AppsSegue" id="QuN-T2-clw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcQ-Zy-AjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="337"/>
+        </scene>
+        <!--Apps View Controller-->
+        <scene sceneID="L9s-7Z-aJy">
+            <objects>
+                <viewController storyboardIdentifier="AppsViewController" id="tS2-KL-RPf" customClass="AppsViewController" customModule="WWDC2015Submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mpX-h7-bse"/>
+                        <viewControllerLayoutGuide type="bottom" id="oBJ-Hz-InR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vwg-Y7-Vxb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc_header" translatesAutoresizingMaskIntoConstraints="NO" id="AE9-EP-1fd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="3tg-Uf-lco"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed Apps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCt-19-2Sm">
+                                <rect key="frame" x="16" y="177" width="460" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="8tG-vP-7h0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Novecentowide-DemiBold" family="Novecento wide" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEI-Mg-7fX">
+                                <rect key="frame" x="534" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.5607843137254902" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="AdJ-iW-2Ux"/>
+                                    <constraint firstAttribute="height" constant="50" id="p9S-lj-NHO"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="companyicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appsButtonPressed:" destination="zaT-hG-q9k" eventType="touchUpInside" id="E5q-Qe-BUJ"/>
+                                    <action selector="specialitiesButtonPressed:" destination="tS2-KL-RPf" eventType="touchUpInside" id="aGA-ZP-hLG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowforwardicon" translatesAutoresizingMaskIntoConstraints="NO" id="r24-Iv-Wz3">
+                                <rect key="frame" x="455" y="510" width="73" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Dgd-vq-mD2"/>
+                                    <constraint firstAttribute="width" constant="73" id="JWu-AM-Oxt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to know more about my specialities?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybr-KF-RNW">
+                                <rect key="frame" x="234" y="554" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bd2-1h-kgV"/>
+                                    <constraint firstAttribute="width" constant="278" id="Elf-yS-ktL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on an app icon to learn more about it." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3e-Ua-k7C">
+                                <rect key="frame" x="16" y="231" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ccX-fh-FGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSL-f6-Q8f" customClass="AppsGraphView" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="16" y="272" width="568" height="218"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E9-hQ-1x0" customClass="RotatingButton" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="484" y="123" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.63529411759999999" blue="0.81960784310000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Hxh-qq-xdO"/>
+                                    <constraint firstAttribute="height" constant="100" id="pId-v3-SbA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="apppageicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VCt-19-2Sm" firstAttribute="top" secondItem="AE9-EP-1fd" secondAttribute="bottom" constant="-3" id="5pg-XV-XyK"/>
+                            <constraint firstItem="oBJ-Hz-InR" firstAttribute="top" secondItem="sEI-Mg-7fX" secondAttribute="bottom" constant="20" id="7LZ-dd-4sn"/>
+                            <constraint firstItem="k3e-Ua-k7C" firstAttribute="top" secondItem="VCt-19-2Sm" secondAttribute="bottom" constant="28" id="Ix1-7p-rBG"/>
+                            <constraint firstItem="sEI-Mg-7fX" firstAttribute="leading" secondItem="r24-Iv-Wz3" secondAttribute="trailing" constant="6" id="OiM-wa-gyV"/>
+                            <constraint firstItem="9E9-hQ-1x0" firstAttribute="leading" secondItem="VCt-19-2Sm" secondAttribute="trailing" constant="8" id="U3x-wM-v0a"/>
+                            <constraint firstItem="k3e-Ua-k7C" firstAttribute="leading" secondItem="vwg-Y7-Vxb" secondAttribute="leading" constant="16" id="Xh2-MH-0Lk"/>
+                            <constraint firstItem="sSL-f6-Q8f" firstAttribute="top" secondItem="k3e-Ua-k7C" secondAttribute="bottom" constant="20" id="bNe-5w-N8U"/>
+                            <constraint firstAttribute="trailing" secondItem="sEI-Mg-7fX" secondAttribute="trailing" constant="16" id="bPP-e5-rRo"/>
+                            <constraint firstItem="AE9-EP-1fd" firstAttribute="leading" secondItem="vwg-Y7-Vxb" secondAttribute="leading" id="bZI-cN-Uky"/>
+                            <constraint firstItem="k3e-Ua-k7C" firstAttribute="trailing" secondItem="vwg-Y7-Vxb" secondAttribute="trailingMargin" id="cUX-19-LpN"/>
+                            <constraint firstItem="r24-Iv-Wz3" firstAttribute="top" secondItem="sSL-f6-Q8f" secondAttribute="bottom" constant="20" id="cqC-RX-kwm"/>
+                            <constraint firstItem="VCt-19-2Sm" firstAttribute="leading" secondItem="vwg-Y7-Vxb" secondAttribute="leading" constant="16" id="gjv-oB-UIk"/>
+                            <constraint firstAttribute="trailing" secondItem="9E9-hQ-1x0" secondAttribute="trailing" constant="16" id="hf1-um-wx6"/>
+                            <constraint firstItem="oBJ-Hz-InR" firstAttribute="top" secondItem="ybr-KF-RNW" secondAttribute="bottom" constant="25" id="hmz-Uw-xeb"/>
+                            <constraint firstAttribute="trailing" secondItem="sSL-f6-Q8f" secondAttribute="trailing" constant="16" id="kxD-Rc-ob8"/>
+                            <constraint firstItem="sEI-Mg-7fX" firstAttribute="leading" secondItem="ybr-KF-RNW" secondAttribute="trailing" constant="22" id="mcZ-7B-iNd"/>
+                            <constraint firstItem="oBJ-Hz-InR" firstAttribute="top" secondItem="r24-Iv-Wz3" secondAttribute="bottom" constant="38" id="nQH-c0-jnr"/>
+                            <constraint firstAttribute="trailing" secondItem="AE9-EP-1fd" secondAttribute="trailing" id="qnS-cp-fyD"/>
+                            <constraint firstItem="9E9-hQ-1x0" firstAttribute="top" secondItem="mpX-h7-bse" secondAttribute="bottom" constant="103" id="uUB-fk-5zr"/>
+                            <constraint firstItem="AE9-EP-1fd" firstAttribute="top" secondItem="mpX-h7-bse" secondAttribute="bottom" constant="-20" id="w7f-iJ-Crs"/>
+                            <constraint firstItem="sSL-f6-Q8f" firstAttribute="leading" secondItem="vwg-Y7-Vxb" secondAttribute="leading" constant="16" id="yI3-Di-jUx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appsButton" destination="9E9-hQ-1x0" id="yVE-4e-v9Z"/>
+                        <outlet property="appsGraphView" destination="sSL-f6-Q8f" id="UA6-0v-apd"/>
+                        <outlet property="companyButton" destination="sEI-Mg-7fX" id="rmw-9v-QlR"/>
+                        <segue destination="4eI-Q1-Guj" kind="show" identifier="SpecialitiesSegue" id="s1u-Tj-Hny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNO-wN-EVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576" y="337"/>
+        </scene>
+        <!--Specialities View Controller-->
+        <scene sceneID="tk3-YS-8Af">
+            <objects>
+                <viewController storyboardIdentifier="SpecialitiesViewController" id="4eI-Q1-Guj" customClass="SpecialitiesViewController" customModule="WWDC2015Submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3C-Bv-WaZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xiG-Im-A4y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o83-uZ-EUX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc_header" translatesAutoresizingMaskIntoConstraints="NO" id="VtU-iZ-1pt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="PxR-Ln-TSk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdu-V2-fWZ" customClass="RotatingButton" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="484" y="123" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.87058823529411766" green="0.5607843137254902" blue="0.20784313725490197" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DIC-w4-AX7"/>
+                                    <constraint firstAttribute="width" constant="100" id="fMK-Oe-WDg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="companyicon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialities" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-n5-jhY">
+                                <rect key="frame" x="16" y="177" width="460" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="z5h-e8-CA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Novecentowide-DemiBold" family="Novecento wide" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOb-ld-kCn">
+                                <rect key="frame" x="16" y="235" width="147" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iOj-jh-keS"/>
+                                    <constraint firstAttribute="width" constant="147" id="t2O-SN-um0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programming" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjR-Hj-zcO">
+                                <rect key="frame" x="437" y="235" width="147" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Dgz-kp-6CI"/>
+                                    <constraint firstAttribute="width" constant="147" id="EmQ-Z4-5CV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgr-j4-Sfj">
+                                <rect key="frame" x="534" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.17254901960784313" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hfg-eN-b50"/>
+                                    <constraint firstAttribute="height" constant="50" id="hkQ-l8-TK2"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="snowboardicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="appsButtonPressed:" destination="zaT-hG-q9k" eventType="touchUpInside" id="9Sy-2j-JkX"/>
+                                    <action selector="interestsButtonPressed" destination="4eI-Q1-Guj" eventType="touchUpInside" id="Cby-mA-CdB"/>
+                                    <action selector="specialitiesButtonPressed:" destination="tS2-KL-RPf" eventType="touchUpInside" id="zYe-VH-797"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowforwardicon" translatesAutoresizingMaskIntoConstraints="NO" id="fxo-rB-eIS">
+                                <rect key="frame" x="451" y="513" width="73" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="INL-Wm-v7P"/>
+                                    <constraint firstAttribute="height" constant="52" id="vY1-az-j8a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show my interests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iv6-GC-Nhk">
+                                <rect key="frame" x="399" y="557" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="AfK-cB-8r8"/>
+                                    <constraint firstAttribute="height" constant="21" id="ytl-KD-aQF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X9G-n5-jhY" firstAttribute="top" secondItem="h3C-Bv-WaZ" secondAttribute="bottom" constant="157" id="2VU-58-7DR"/>
+                            <constraint firstItem="mdu-V2-fWZ" firstAttribute="top" secondItem="h3C-Bv-WaZ" secondAttribute="bottom" constant="103" id="71Z-5Y-EHy"/>
+                            <constraint firstItem="qOb-ld-kCn" firstAttribute="top" secondItem="X9G-n5-jhY" secondAttribute="bottom" constant="32" id="8XB-Q8-ccL"/>
+                            <constraint firstItem="qOb-ld-kCn" firstAttribute="leading" secondItem="o83-uZ-EUX" secondAttribute="leading" constant="16" id="A9A-Gn-zS7"/>
+                            <constraint firstAttribute="trailing" secondItem="Zgr-j4-Sfj" secondAttribute="trailing" constant="16" id="COM-eC-F6h"/>
+                            <constraint firstAttribute="trailing" secondItem="VtU-iZ-1pt" secondAttribute="trailing" id="Dc2-Lt-lhP"/>
+                            <constraint firstAttribute="trailing" secondItem="vjR-Hj-zcO" secondAttribute="trailing" constant="16" id="Edq-e6-5Aj"/>
+                            <constraint firstAttribute="trailing" secondItem="mdu-V2-fWZ" secondAttribute="trailing" constant="16" id="HD5-th-tFA"/>
+                            <constraint firstItem="vjR-Hj-zcO" firstAttribute="top" secondItem="mdu-V2-fWZ" secondAttribute="bottom" constant="12" id="LFr-Rh-lFC"/>
+                            <constraint firstItem="xiG-Im-A4y" firstAttribute="top" secondItem="Iv6-GC-Nhk" secondAttribute="bottom" constant="22" id="Mxf-ch-Sn5"/>
+                            <constraint firstItem="Zgr-j4-Sfj" firstAttribute="leading" secondItem="fxo-rB-eIS" secondAttribute="trailing" constant="10" id="NJR-FP-Djd"/>
+                            <constraint firstItem="Zgr-j4-Sfj" firstAttribute="leading" secondItem="Iv6-GC-Nhk" secondAttribute="trailing" constant="10" id="TB9-wV-rti"/>
+                            <constraint firstItem="xiG-Im-A4y" firstAttribute="top" secondItem="fxo-rB-eIS" secondAttribute="bottom" constant="35" id="d5S-fC-euB"/>
+                            <constraint firstItem="X9G-n5-jhY" firstAttribute="leading" secondItem="o83-uZ-EUX" secondAttribute="leading" constant="16" id="fqF-ji-h9G"/>
+                            <constraint firstItem="xiG-Im-A4y" firstAttribute="top" secondItem="Zgr-j4-Sfj" secondAttribute="bottom" constant="20" id="hzX-Ev-v4p"/>
+                            <constraint firstItem="mdu-V2-fWZ" firstAttribute="leading" secondItem="X9G-n5-jhY" secondAttribute="trailing" constant="8" id="jNu-hV-tkI"/>
+                            <constraint firstItem="VtU-iZ-1pt" firstAttribute="leading" secondItem="o83-uZ-EUX" secondAttribute="leading" id="wZy-mi-jWX"/>
+                            <constraint firstItem="VtU-iZ-1pt" firstAttribute="top" secondItem="h3C-Bv-WaZ" secondAttribute="bottom" constant="-20" id="yfG-2Z-LaE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="interestsButton" destination="Zgr-j4-Sfj" id="hhp-gU-gbG"/>
+                        <outlet property="softwareEngineeringLabel" destination="qOb-ld-kCn" id="33M-lr-JUg"/>
+                        <outlet property="specialitiesButton" destination="mdu-V2-fWZ" id="KV5-Ls-uDA"/>
+                        <segue destination="Amd-j2-Ebh" kind="show" identifier="InterestsSegue" id="D6e-kZ-W46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy0-ea-DKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3323" y="337"/>
+        </scene>
+        <!--Interests View Controller-->
+        <scene sceneID="ap8-Xa-3iq">
+            <objects>
+                <viewController storyboardIdentifier="InterestsViewController" id="Amd-j2-Ebh" customClass="InterestsViewController" customModule="WWDC2015Submission" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QzL-wC-pSM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QaZ-0K-uqN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHu-gl-AaV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwdc_header" translatesAutoresizingMaskIntoConstraints="NO" id="mM4-wo-G6Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Q0G-xV-hXw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-pf-ZJP">
+                                <rect key="frame" x="16" y="177" width="460" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="J21-aZ-4t5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Novecentowide-DemiBold" family="Novecento wide" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snI-py-EEA" customClass="RotatingButton" customModule="WWDC2015Submission" customModuleProvider="target">
+                                <rect key="frame" x="484" y="123" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UkT-Ne-MDd"/>
+                                    <constraint firstAttribute="height" constant="100" id="vHz-0U-oKX"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="snowboardphoto">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uf-9f-ckH">
+                                <rect key="frame" x="10" y="231" width="580" height="191"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">My main interests regarding software are developing apps for the mobile platform. I like to see what people can do with apps and I like the fact that they can use the apps at any time and any place. In particular, I like to work on creating communication facilities for users such as chat clients or other messaging systems.
+
+When I'm not developing, I'm probably using other apps, playing games or watching movies. My big hobby is snowboarding. I go nearly every year to Austria on holiday.</string>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to know more?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-fv-iLu">
+                                <rect key="frame" x="16" y="434" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="dhj-N2-fCv"/>
+                                    <constraint firstAttribute="height" constant="21" id="y4T-IZ-FJ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppc-Rv-ur9">
+                                <rect key="frame" x="162" y="430" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9tG-yX-Dyz"/>
+                                    <constraint firstAttribute="width" constant="30" id="A0F-dF-Tbm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="twittericon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterButtonPressed" destination="Amd-j2-Ebh" eventType="touchUpInside" id="TYd-Yg-gqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs6-ZN-dN7">
+                                <rect key="frame" x="202" y="430" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q6B-k4-8dC"/>
+                                    <constraint firstAttribute="width" constant="30" id="tPB-aq-gFd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="linkedinicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkedinButtonPressed" destination="Amd-j2-Ebh" eventType="touchUpInside" id="mHm-5m-ahB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egC-cm-NyE">
+                                <rect key="frame" x="242" y="430" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="xBx-e9-pVC"/>
+                                    <constraint firstAttribute="height" constant="30" id="yYE-D0-LJu"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="facebookicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButtonPressed" destination="Amd-j2-Ebh" eventType="touchUpInside" id="45t-vP-M7n"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowphoto" translatesAutoresizingMaskIntoConstraints="NO" id="Dia-sl-n8k">
+                                <rect key="frame" x="0.0" y="472" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Su1-J9-s9k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1uf-9f-ckH" firstAttribute="top" secondItem="snI-py-EEA" secondAttribute="bottom" constant="8" id="1NI-D5-2Pb"/>
+                            <constraint firstItem="gs6-ZN-dN7" firstAttribute="top" secondItem="1uf-9f-ckH" secondAttribute="bottom" constant="8" id="4Tk-ai-TiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mM4-wo-G6Y" secondAttribute="trailing" id="6cx-Bj-OEF"/>
+                            <constraint firstItem="ppc-Rv-ur9" firstAttribute="leading" secondItem="Jea-fv-iLu" secondAttribute="trailing" constant="3" id="8AX-hn-Sn1"/>
+                            <constraint firstItem="egC-cm-NyE" firstAttribute="top" secondItem="1uf-9f-ckH" secondAttribute="bottom" constant="8" id="8Ka-zn-BP3"/>
+                            <constraint firstItem="snI-py-EEA" firstAttribute="top" secondItem="QzL-wC-pSM" secondAttribute="bottom" constant="103" id="BwV-Sm-x45"/>
+                            <constraint firstItem="Dia-sl-n8k" firstAttribute="leading" secondItem="dHu-gl-AaV" secondAttribute="leading" id="Eh0-rA-qKY"/>
+                            <constraint firstItem="KxU-pf-ZJP" firstAttribute="leading" secondItem="dHu-gl-AaV" secondAttribute="leading" constant="16" id="MZ7-TD-64H"/>
+                            <constraint firstItem="mM4-wo-G6Y" firstAttribute="top" secondItem="QzL-wC-pSM" secondAttribute="bottom" constant="-20" id="Nm9-RT-koL"/>
+                            <constraint firstItem="Jea-fv-iLu" firstAttribute="top" secondItem="1uf-9f-ckH" secondAttribute="bottom" constant="12" id="Oup-su-AeK"/>
+                            <constraint firstItem="ppc-Rv-ur9" firstAttribute="top" secondItem="1uf-9f-ckH" secondAttribute="bottom" constant="8" id="OzB-s3-wI0"/>
+                            <constraint firstItem="gs6-ZN-dN7" firstAttribute="leading" secondItem="ppc-Rv-ur9" secondAttribute="trailing" constant="10" id="TxI-dA-KPa"/>
+                            <constraint firstItem="QaZ-0K-uqN" firstAttribute="top" secondItem="1uf-9f-ckH" secondAttribute="bottom" constant="178" id="WiV-ht-ZKV"/>
+                            <constraint firstAttribute="trailing" secondItem="snI-py-EEA" secondAttribute="trailing" constant="16" id="Yat-oK-vlu"/>
+                            <constraint firstItem="snI-py-EEA" firstAttribute="leading" secondItem="KxU-pf-ZJP" secondAttribute="trailing" constant="8" id="fhS-Dn-rRc"/>
+                            <constraint firstAttribute="trailing" secondItem="1uf-9f-ckH" secondAttribute="trailing" constant="10" id="gUM-p5-m9M"/>
+                            <constraint firstItem="1uf-9f-ckH" firstAttribute="leading" secondItem="dHu-gl-AaV" secondAttribute="leading" constant="10" id="h3j-X3-ZpR"/>
+                            <constraint firstItem="KxU-pf-ZJP" firstAttribute="top" secondItem="QzL-wC-pSM" secondAttribute="bottom" constant="157" id="jtB-Fh-FiS"/>
+                            <constraint firstItem="mM4-wo-G6Y" firstAttribute="leading" secondItem="dHu-gl-AaV" secondAttribute="leading" id="m9d-JP-pns"/>
+                            <constraint firstAttribute="trailing" secondItem="Dia-sl-n8k" secondAttribute="trailing" id="mlI-tf-G5K"/>
+                            <constraint firstItem="egC-cm-NyE" firstAttribute="leading" secondItem="gs6-ZN-dN7" secondAttribute="trailing" constant="10" id="nXE-BM-bEw"/>
+                            <constraint firstItem="QaZ-0K-uqN" firstAttribute="top" secondItem="Dia-sl-n8k" secondAttribute="bottom" id="t01-Qj-84F"/>
+                            <constraint firstItem="Jea-fv-iLu" firstAttribute="leading" secondItem="dHu-gl-AaV" secondAttribute="leading" constant="16" id="yRF-nP-4Ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="snowboardPhotoButton" destination="snI-py-EEA" id="UDT-d8-DhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMd-IA-QmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4083" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="690-te-DPH">
+            <objects>
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oUf-S9-dAq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zrw-tE-VPo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="kV2-9y-fTj" id="zQr-u6-LHF"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="lDB-oC-CYo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbj-Gx-oBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="kV2-9y-fTj" customClass="NavigationControllerDelegate" customModule="WWDC2015Submission" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apppageicon" width="512" height="512"/>
+        <image name="arrowforwardicon" width="350" height="250"/>
+        <image name="arrowicon" width="330" height="330"/>
+        <image name="companyicon" width="512" height="512"/>
+        <image name="facebookicon" width="100" height="100"/>
+        <image name="linkedinicon" width="100" height="100"/>
+        <image name="profilephoto" width="1000" height="1015"/>
+        <image name="snowboardicon" width="512" height="512"/>
+        <image name="snowboardphoto" width="300" height="300"/>
+        <image name="snowphoto" width="816" height="311"/>
+        <image name="twittericon" width="100" height="100"/>
+        <image name="wwdc_header" width="680" height="273"/>
+    </resources>
+</document>
